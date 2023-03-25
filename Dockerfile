@@ -1,0 +1,7 @@
+FROM mariadb:10.5
+ENV MYSQL_ROOT_PASSWORD=password
+ENV MYSQL_DATABASE=drupaldb
+ENV MYSQL_USER=drupaluser
+ENV MYSQL_PASSWORD=drupalpass
+EXPOSE 3306
+CMD ["mysqld"]
